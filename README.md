@@ -1,8 +1,8 @@
-## About The Project
+# About The Project
 
 A single page web application that allows users to search for recipes based on their query.
 
-### Technologies
+# Technologies
 
 - React
   - Hooks
@@ -15,7 +15,7 @@ A single page web application that allows users to search for recipes based on t
   - ES6
 - [Edamam API](https://developer.edamam.com/)
 
-## How It Works
+# How It Works
 
 - Search by food item or recipe
 - Grabs recipe information from Edamam API.
@@ -23,6 +23,6 @@ A single page web application that allows users to search for recipes based on t
 - Use React components to structure data into presentational format
 - Use CSS to create visually appealing and user friendly application
 
-## Roadmap
+# Roadmap
 
 See the [open issues](https://github.com/kazare/recipe-finder-app/issues) for a list of proposed features (and known issues).
