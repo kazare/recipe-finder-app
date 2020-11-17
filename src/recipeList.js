@@ -1,5 +1,5 @@
 import React from 'react';
-import '../recipe.css';
+import './recipe.css';
 
 // Format list of recipes
 const RecipeList = ({ label, image, url, servings, calories, cookTime, ingredients, sourceLabel, sourceUrl, diets, healthLabels }) => {
@@ -14,10 +14,11 @@ const RecipeList = ({ label, image, url, servings, calories, cookTime, ingredien
                 <div className="cookInfo">
                     <span>Servings: {servings}</span>
                     <span>Calories: {Math.round((calories / servings))}</span>
-                    <span>Time: {cookTime}</span>
+                    <span>Time (min): {cookTime}</span>
                 </div>
 
                 <p className="diet">
+                    {/*Map data to elements*/}
                     {diets.map(diet => {
                         return (<span>{diet}</span>);
                     })}
@@ -25,14 +26,14 @@ const RecipeList = ({ label, image, url, servings, calories, cookTime, ingredien
 
                 <h3>Ingredients</h3>
                 <ul className="ingredientList">
-                    {//Return list elements of ingredients
-                        ingredients.map(ingredient => {
-                            return (<li>{ingredient}</li>);
-                        })}
+                    {/*Map data to elements*/}
+                    {ingredients.map(ingredient => {
+                        return (<li>{ingredient}</li>);
+                    })}
                 </ul>
 
                 <a href={sourceUrl} target="_blank" rel=" noreferrer noopener"><div className="btn">View on {sourceLabel}</div></a>
-
+                {/*Map data to elements*/}
                 <p className="health">
                     {healthLabels.map(label => {
                         return (<span>{label}</span>);
