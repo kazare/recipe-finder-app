@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Serif", serif;
+  overflow-wrap: break-word;
 }
 
 .main {
@@ -54,6 +55,20 @@
   border: none;
 }
 
+.errormsg {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  margin: 20px;
+  border: 5px solid var(--dark-primary-color);
+  background-color: white;
+  padding: 5%;
+  font-size: 1em;
+  text-align: center;
+}
+
 .recipeList {
   width: 80vw;
   display: flex;
@@ -75,6 +90,11 @@
   .header input,
   .header button {
     font-size: 1em;
+  }
+
+  .errormsg {
+    font-size: 3em;
+    width: 80vw;
   }
 
   .recipeList {
