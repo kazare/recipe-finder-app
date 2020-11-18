@@ -66,12 +66,20 @@ img {
   padding: 3%;
 }
 
+.diet {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .diet span {
   padding: 10px;
-  background-color: var(--light-primary-color);
+  margin-bottom: 5%;
   text-align: center;
+  background-color: var(--light-primary-color);
   border-radius: var(--border-radius);
-  display: inline-block;
   font-size: 0.8em;
 }
 
