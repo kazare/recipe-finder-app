@@ -112,6 +112,7 @@ const App = () => {
       {/* Attribution link */}
       <footer>
         <div id="edamam-badge" data-color="white"></div>
+        <div className="credit">Code by <a href="https://github.com/kazare/recipe-finder-app">Kazare</a></div>
       </footer>
     </div>
   );
